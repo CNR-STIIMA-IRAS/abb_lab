@@ -105,7 +105,7 @@
     <!-- joint list -->
     
     <joint name="${prefix}joint_world" type="fixed">
-      <origin xyz="-8 1 0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
       <parent link="world"/>
       <child link="${prefix}fake_linear_axis"/>
     </joint>
