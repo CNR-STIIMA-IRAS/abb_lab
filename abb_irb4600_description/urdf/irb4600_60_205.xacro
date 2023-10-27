@@ -2,5 +2,14 @@
 <robot name="abb_irb4600_60_205" xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:include filename="$(find abb_irb4600_description)/urdf/irb4600_60_205_macro.xacro"/>
   <xacro:abb_irb4600_60_205 prefix=""/>
+
+  <joint name="$joint_deformation" type="fixed">
+    <origin xyz="0.78 0.744 0" rpy="0 1.5707 0"/>
+    <parent link="link_6"/>
+    <child link="grasping"/>
+  </joint>
+  
+   <link name="grasping"/>
+
 </robot>
 
